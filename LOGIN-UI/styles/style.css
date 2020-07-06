@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.container form {
+  border-right: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container form .btn {
+  cursor: pointer;
+  font-family: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #141c2c;
+  border: 2px solid #141c2c;
+  border-radius: 3px;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container form .btn img {
+  margin-right: 10px;
+  width: 25px;
+}
+
+.container form .btn--ghost {
+  background-color: transparent;
+  color: #141c2c;
+  border-color: #ecf2ff;
+}
+
+.container form .form-control {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.container form .form-control label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.container form .form-control input:not([type='checkbox']) {
+  background-color: transparent;
+  border: 2px solid #ecf2ff;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.container form .checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.container form .checkbox-container label {
+  color: #afb2e4;
+  font-weight: bold;
+}
+
+.container form .checkbox-container a {
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.container .features {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .container .features {
+    display: none;
+  }
+}
+
+.container .features .feature {
+  position: relative;
+  padding-left: 30px;
+  margin: 40px 0;
+}
+
+.container .features .feature i {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.container .features .feature h3 {
+  margin: 0;
+}
+
+.container .features .feature p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 5px 0;
+}
+/*# sourceMappingURL=style.css.map */

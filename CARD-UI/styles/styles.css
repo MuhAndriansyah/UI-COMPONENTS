@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f8fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  width: 940px;
+  max-width: 100%;
+  margin: auto;
+  gap: 20px;
+}
+
+@media (max-width: 940px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.container .card {
+  width: 300px;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.container .card__media img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .card__content {
+  min-width: 240px;
+  padding: 20px;
+}
+
+.container .card__content .tag {
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 3px 8px;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 12px;
+}
+
+.container .card__content .tag--teal {
+  background-color: steelblue;
+}
+
+.container .card__content .tag--pink {
+  background-color: #c62bcb;
+}
+
+.container .card__content .tag--purple {
+  background-color: #3d1d94;
+}
+
+.container .card__content h5 {
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+.container .card__content p {
+  margin: 0 0 40px;
+  font-size: 13px;
+}
+
+.container .card__content__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+}
+
+.container .card__content__user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.container .card__content__user__info h5 {
+  margin: 0;
+}
+
+.container .card__content__user__info small {
+  color: grey;
+}
+/*# sourceMappingURL=styles.css.map */

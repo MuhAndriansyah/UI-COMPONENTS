@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+@import './abstracts/mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: #f7f8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  width: 940px;
+  max-width: 100%;
+  margin: auto;
+  gap: 20px;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .card {
+    width: 300px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+
+    &__media {
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      min-width: 240px;
+      padding: 20px;
+
+      .tag {
+        text-transform: uppercase;
+        border-radius: 50px;
+        padding: 3px 8px;
+        background-color: #ccc;
+        color: #fff;
+        font-size: 12px;
+      }
+
+      .tag--teal {
+        background-color: steelblue;
+      }
+
+      .tag--pink {
+        background-color: #c62bcb;
+      }
+
+      .tag--purple {
+        background-color: #3d1d94;
+      }
+
+      h5 {
+        margin: 10px 0 5px;
+        font-size: 14px;
+      }
+
+      p {
+        margin: 0 0 40px;
+        font-size: 13px;
+      }
+
+      &__user {
+        display: flex;
+        margin-top: auto;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        &__info {
+          h5 {
+            margin: 0;
+          }
+
+          small {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}

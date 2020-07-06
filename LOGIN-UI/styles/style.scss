@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+
+@import './abstracts/mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  form {
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    flex: 1;
+
+    .btn {
+      cursor: pointer;
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #141c2c;
+      border: 2px solid #141c2c;
+      border-radius: 3px;
+      width: 100%;
+      color: #fff;
+      padding: 10px;
+      margin: 20px 0;
+      font-size: 14px;
+      font-weight: bold;
+
+      img {
+        margin-right: 10px;
+        width: 25px;
+      }
+    }
+
+    .btn--ghost {
+      background-color: transparent;
+      color: #141c2c;
+      border-color: #ecf2ff;
+    }
+
+
+    .form-control {
+      margin: 10px 0;
+      width: 100%;
+
+      label {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input:not([type='checkbox']) {
+        background-color: transparent;
+        border: 2px solid #ecf2ff;
+        border-radius: 3px;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+      }
+    }
+
+    .checkbox-container {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 15px;
+      width: 100%;
+
+      label {
+        color: #afb2e4;
+        font-weight: bold;
+      }
+
+      a {
+        margin-left: auto;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .features {
+    flex: 1.5;
+    padding: 40px;
+
+    @include tablet {
+      display: none;
+    }
+
+    .feature {
+      position: relative;
+      padding-left: 30px;
+      margin: 40px 0;
+
+      i {
+        position: absolute;
+        top: 5px;
+        left: 0;
+      }
+
+      h3 {
+        margin: 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 5px 0;
+      }
+    }
+  }
+}
